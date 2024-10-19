@@ -1,19 +1,10 @@
-// src/chatBlock/Chat.jsx
 import React, { useState } from 'react';
+import axios from 'axios';
 import styles from './chat.module.css';
 import ChatInput from './ChatInput';
 import ChatMessage from './ChatMessage';
 
-// Simulated response delay
-const simulateAPIResponse = async (message) => {
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    return {
-        id: Date.now(),
-        text: `This is a simulated response to: "${message}"`,
-        sender: 'assistant',
-        timestamp: new Date().toISOString()
-    };
-};
+const API_URL = 'http://127.0.0.1:8000/api/qa/';  // Adjust if your Django server is on a different port
 
 const Chat = () => {
     const [messages, setMessages] = useState([
@@ -38,13 +29,26 @@ const Chat = () => {
         };
         setMessages(prev => [...prev, userMessage]);
 
-        // Simulate API call
+        // Call API
         setIsLoading(true);
         try {
-            const response = await simulateAPIResponse(message);
-            setMessages(prev => [...prev, response]);
+            const response = await axios.post(API_URL, { question: message });
+            const assistantMessage = {
+                id: Date.now() + 1,
+                text: response.data.answer,
+                sender: 'assistant',
+                timestamp: new Date().toISOString()
+            };
+            setMessages(prev => [...prev, assistantMessage]);
         } catch (error) {
             console.error('Error:', error);
+            // Optionally, add an error message to the chat
+            setMessages(prev => [...prev, {
+                id: Date.now() + 1,
+                text: "Sorry, there was an error processing your request.",
+                sender: 'assistant',
+                timestamp: new Date().toISOString()
+            }]);
         } finally {
             setIsLoading(false);
         }
