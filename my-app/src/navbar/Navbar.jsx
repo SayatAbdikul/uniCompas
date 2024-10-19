@@ -10,7 +10,7 @@ function Navbar(props) {
             <div className={styles.search}>
                 <input className={styles.searchInput} placeholder={"right something mazafaka"}/>
                 <button className={styles.searchButton}>
-                    <img src={searchImage}/>
+                    <img alt={"search"} src={searchImage}/>
                 </button>
             </div>
             <a href={"#"} className={styles.signUp}>SIGNUP</a>

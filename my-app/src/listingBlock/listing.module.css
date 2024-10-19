@@ -1,0 +1,58 @@
+.listing{
+    width: 80%;
+    margin-left: 12.5%;
+}
+
+.titleBlock{
+    width: 100%;
+    margin-top: 5vw;
+    background-color: #2F81D0;
+    height: 10vw;
+    font-family: Lexend;
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 2.3vw;
+    text-align: left;
+    display: flex;
+}
+.titleBlock p{
+    margin-left: 5%;
+    margin-top: 3.5vw;
+}
+.titleBlock p:nth-child(2){
+    margin-left: 10%;
+}
+.titleBlock p:nth-child(3){
+    margin-left: 35%;
+}
+
+.university{
+    display: flex;
+    width: 100%;
+    background: linear-gradient(180deg, #DFEFFF 0%, #EEF6FF 100%);
+    border-radius: 1.5vw;
+    border-image-source: linear-gradient(180deg, #97AEC6 0%, #A5B4C5 100%);
+    box-shadow: 5px 5px 15px 0px #ABB9C7;
+
+    height: 5vw;
+    margin-top: 2vw;
+    font-family: Lalezar;
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 2vw;
+    text-align: left;
+}
+.university p{
+    margin-left: 5%;
+}
+.university p:nth-child(2){
+    margin-left: 15%;
+}
+.university p:nth-child(4){
+    margin-left: 13%;
+}
+.logo{
+    height: 90%;
+    margin-top: 0.3%;
+    margin-left: 20%;
+}
