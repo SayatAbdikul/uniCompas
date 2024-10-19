@@ -1,0 +1,85 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 4vw;
+    background-color: #2F30D0;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+.logo{
+    width: 4vw;
+    background-color: red;
+    margin-left: 3%;
+    height: 50%;
+    margin-top: 1vw;
+}
+.ranking{
+    font-family: Lexend;
+    margin-left: 5%;
+    margin-top: 1vw;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+}
+.search{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 0.3%;
+    background-color: white;
+    height: 80%;
+    width: 45%;
+    padding-right: 1%;
+    border-width: 3px; /* Top border 3px, no other borders */
+    border-style: solid;
+    border-color: #35CFCF;
+    border-radius: 50px 50px 50px 50px;
+}
+.searchButton{
+    background-color: white;
+    border-width: 0;
+    margin-top: 1%;
+    height: 80%;
+}
+.searchButton:hover {
+    cursor: pointer; /* Change the cursor on hover */
+}
+.searchInput{
+    width: 100%;
+    height: 80%;
+    margin-top: 0.8%;
+    margin-left: 2%;
+    padding-left: 5%;
+    border-width: 0;
+}
+.signUp{
+    font-family: Lexend;
+    text-decoration: none;
+    margin-top: 0.7vw;
+    margin-left: 10%;
+    width: 5vw;
+    background: #2FD0CF;
+    height: 1vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1.1vw;
+    text-align: center;
+    color: white;
+}
+.login{
+    font-family: Lexend;
+    text-decoration: none;
+    margin-top: 0.7vw;
+    margin-left: 0;
+    width: 5vw;
+    height: 1vw;
+    padding: 1vw;
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1.1vw;
+    text-align: center;
+    color: white;
+}

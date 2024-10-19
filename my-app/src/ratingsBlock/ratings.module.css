@@ -1,0 +1,56 @@
+.ratingsBlock{
+    width: 70%;
+    height: 10vw;
+    background: linear-gradient(0deg, #DFEFFF, #DFEFFF), linear-gradient(180deg, #DFEFFF 0%, #EEF6FF 100%);
+    border: 1px solid;
+    position: relative;
+    margin-left: 15%;
+    border-image-source: linear-gradient(180deg, #97AEC6 0%, #A5B4C5 100%);
+    box-shadow: 5px 5px 15px 0px #ABB9C7;
+    border-radius: 1vw;
+    display: flex;
+    margin-top: 3vw;
+}
+.choiceBlock{
+    display: flex;
+    width: 40%;
+    height: 4vw;
+    border-radius: 3vw;
+    background: linear-gradient(180deg, #DFEFFF 0%, #EEF6FF 100%);
+    box-shadow: 5px 5px 15px 0px #ABB9C7 inset;
+    margin-top: 4%;
+    margin-left: 6%;
+}
+.subject{
+    background: linear-gradient(116.32deg, #2FD0CF 16.9%, #0038FF 83.1%);
+    -webkit-background-clip: text;  /* For WebKit browsers */
+    -webkit-text-fill-color: transparent;  /* Makes the text transparent */
+    background-clip: text;  /* Standard for other browsers */
+    color: transparent;  /* Makes the text itself invisible */
+}
+.switch1{
+    text-decoration: none;
+    font-family: Lexend;
+    font-size: 2vw;
+    font-weight: 700;
+    line-height: 4vw;
+    margin: 0;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background: #2FD0CF;
+    color: white;
+    border-radius: 3vw;
+}
+.switch2{
+    text-decoration: none;
+    font-family: Lexend;
+    font-size: 2vw;
+    font-weight: 700;
+    line-height: 4vw;
+    margin: 0;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    color: black;
+}
