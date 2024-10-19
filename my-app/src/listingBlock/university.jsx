@@ -6,7 +6,7 @@ function University({place, name, score}) {
         <div className={styles.university}>
             <p>{place}</p>
             <p>{name}</p>
-            <img src={uniLogo} className={styles.logo}/>
+            <img alt={"uniLogo"} src={uniLogo} className={styles.logo}/>
             <p>{score}</p>
         </div>
     );

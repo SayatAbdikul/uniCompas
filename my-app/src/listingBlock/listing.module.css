@@ -34,7 +34,8 @@
     border-image-source: linear-gradient(180deg, #97AEC6 0%, #A5B4C5 100%);
     box-shadow: 5px 5px 15px 0px #ABB9C7;
 
-    height: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     margin-top: 2vw;
     font-family: Lalezar;
     font-size: 2vw;
@@ -47,12 +48,13 @@
 }
 .university p:nth-child(2){
     margin-left: 15%;
+    width: 5vw;
 }
 .university p:nth-child(4){
     margin-left: 13%;
 }
 .logo{
-    height: 90%;
-    margin-top: 0.3%;
+    height: 100%;
+    margin-top: 1vw;
     margin-left: 20%;
 }
